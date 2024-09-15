@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Quote Of A Day</h1>
+
+        <div class="theme-toggle">
+          <label id="theme-label" for="theme-switch">Dark Mode</label>
+          <input type="checkbox" id="theme-switch" />
+        </div>
+      </header>
+
+      <div class="controls">
+        <div>
+          <label for="category">Choose Category:</label>
+          <select id="category-select">
+            <option value="Education">Education</option>
+            <option value="Happiness">Happiness</option>
+            <option value="Time">Time</option>
+
+          </select>
+        </div>
+
+        <div class="font-controls">
+          <button id="increase-font">+</button>
+          <button id="decrease-font">-</button>
+        </div>
+      </div>
+
+      <div class="quote-container">
+        <p id="quote">Click Next to show a quote.</p>
+      </div>
+
+      <div class="buttons">
+        <button id="prev-btn">Previous</button>
+        <button id="random-btn">Random</button>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
